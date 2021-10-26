@@ -3,13 +3,13 @@
   They call the planet "Alpha" and they decide that the FAMILIES whose last names start with 'A' should stay,
   while the others go on in search of other planets to call home.
 
-  Create a function that returns an array of colonisers that will stay, according to the above rules.
+  Create a function that returns an array of colonizers that will stay, according to the above rules.
 
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
+function colonizers(arr) {
+  return arr.filter((voyager) => voyager.slice(0, 1) === "A" && voyager.includes("family"));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -26,24 +26,20 @@ const voyagers = [
   "Asimov",
   "Oscar family",
   "Avery family",
-  "Archer family"
+  "Archer family",
 ];
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
-    let status;
-    if (util.isDeepStrictEqual(actual, expected)) {
-        status = "PASSED";
-    } else {
-        status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-    }
+  let status;
+  if (util.isDeepStrictEqual(actual, expected)) {
+    status = "PASSED";
+  } else {
+    status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
+  }
 
-    console.log(`${test_name}: ${status}`);
+  console.log(`${test_name}: ${status}`);
 }
 
-test(
-  "colonisers function works",
-  colonisers(voyagers),
-  ["Adam family", "Avery family", "Archer family"]
-)
+test("colonizers function works", colonizers(voyagers), ["Adam family", "Avery family", "Archer family"]);
