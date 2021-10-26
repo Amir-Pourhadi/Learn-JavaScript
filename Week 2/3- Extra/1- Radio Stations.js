@@ -15,6 +15,12 @@
 
 // `getAllFrequencies` goes here
 
+function getAllFrequencies() {
+  const frequencies = [];
+  for (let i = 87; i <= 108; i++) frequencies.push(i);
+  return frequencies;
+}
+
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -26,6 +32,9 @@
  */
 // `getStations` goes here
 
+function getStations() {
+  return getAllFrequencies().filter((frequency) => isRadioStation(frequency));
+}
 
 /* ======= TESTS - DO NOT MODIFY ======= */
 
@@ -36,10 +45,10 @@ function getAvailableStations() {
     const stationCount = 4;
     getAvailableStations.stations = new Array(stationCount)
       .fill(undefined)
-      .map(function() {
+      .map(function () {
         return Math.floor(Math.random() * (108 - 87 + 1) + 87);
       })
-      .sort(function(frequencyA, frequencyB) {
+      .sort(function (frequencyA, frequencyB) {
         return frequencyA - frequencyB;
       });
   }
@@ -58,38 +67,16 @@ function test(testName, fn) {
     fn();
     console.log(`\n✅ ${testName}: PASS`);
   } catch (error) {
-    console.log(
-      `\n❌ ${testName}: FAIL (see details below)\n\n${error.message}`
-    );
+    console.log(`\n❌ ${testName}: FAIL (see details below)\n\n${error.message}`);
   }
 }
 
-test("getAllFrequencies() returns all frequencies between 87 and 108", function() {
+test("getAllFrequencies() returns all frequencies between 87 and 108", function () {
   const frequencies = getAllFrequencies();
-  assert.deepStrictEqual(frequencies, [
-    87,
-    88,
-    89,
-    90,
-    91,
-    92,
-    93,
-    94,
-    95,
-    96,
-    97,
-    98,
-    99,
-    100,
-    101,
-    102,
-    103,
-    104,
-    105,
-    106,
-    107,
-    108
-  ]);
+  assert.deepStrictEqual(
+    frequencies,
+    [87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
+  );
 });
 
 test("getStations() returns all the available stations", () => {
