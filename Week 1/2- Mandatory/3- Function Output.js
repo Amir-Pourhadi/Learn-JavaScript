@@ -9,7 +9,7 @@ function getNumber() {
 // Add comments to explain what this function does. You're meant to use Google!
 /**
  * @params Two strings
- * @returns another concatenate string (w1 + w2)
+ * @returns another concatenate string (w1 + w2), without any spaces and with mentioned order
  */
 function s(w1, w2) {
   return w1.concat(w2);
