@@ -21,10 +21,9 @@ function concatenate(firstWord, secondWord, thirdWord) {
   return `${firstWord} ${secondWord} ${thirdWord}`;
 }
 
-/* ======= TESTS - DO NOT MODIFY =====
-There are some Tests in this file that will help you work out if your code is working.
-To run these tests type `node 3-function-output` into your terminal
-*/
+/* -------------------------- TESTS - DO NOT MODIFY ------------------------- */
+// There are some Tests in this file that will help you work out if your code is working.
+
 
 const util = require("util");
 

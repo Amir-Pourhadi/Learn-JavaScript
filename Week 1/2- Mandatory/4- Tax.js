@@ -20,13 +20,11 @@ function calculateSalesTax(price) {
 */
 
 function addTaxAndFormatCurrency(price) {
-  return `£${calculateSalesTax(price).toFixed(2)}`;
+  return "£" + calculateSalesTax(price).toFixed(2);
 }
 
-/* ======= TESTS - DO NOT MODIFY =====
-There are some Tests in this file that will help you work out if your code is working.
-To run these tests type `node 4-tax.js` into your terminal
-*/
+/* -------------------------- TESTS - DO NOT MODIFY ------------------------- */
+// There are some Tests in this file that will help you work out if your code is working.
 
 const util = require("util");
 
