@@ -21,11 +21,9 @@ function convertToBRL(price) {
   return (99 / 100) * price * 5.7;
 }
 
-/* ======= TESTS - DO NOT MODIFY ===== 
-There are some Tests in this file that will help you work out if your code is working.
+/* -------------------------- TESTS - DO NOT MODIFY ------------------------- */
+// There are some Tests in this file that will help you work out if your code is working.
 
-To run these tests type `node 1-currency-conversion` into your terminal
-*/
 
 const util = require("util");
 
