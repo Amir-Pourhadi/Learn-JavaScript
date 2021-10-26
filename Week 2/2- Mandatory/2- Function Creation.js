@@ -5,7 +5,9 @@ Write a function that:
 - removes any forward slashes (/) in the strings
 - makes the string all lowercase
 */
-function tidyUpString(strArr) {}
+function tidyUpString(strArr) {
+  return strArr.map((str) => str.trim().replace("/", "").toLowerCase());
+}
 
 /*
 Complete the function to check if the variable `num` satisfies the following requirements:
@@ -15,7 +17,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return typeof num === "number" && !(num % 2) && num <= 100;
+}
 
 /* 
 Write a function that returns a copy of the given array arr, but with the element at the given index, index removed.
@@ -23,7 +27,9 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  return; // complete this statement
+  let newArr = [...arr];
+  newArr.splice(index, 1);
+  return newArr; // complete this statement
 }
 
 /*
@@ -35,12 +41,12 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  
+  return arr.map((el) => (el > 100 ? (el = "100%") : Math.round(el * 100) / 100 + "%"));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
-const util = require('util');
+const util = require("util");
 
 function test(test_name, actual, expected) {
   let status;
@@ -73,20 +79,18 @@ function arraysEqual(a, b) {
   return true;
 }
 
-test(
-  "tidyUpString function works - case 1",
-  tidyUpString(["/Daniel ", "irina ", " Gordon", "ashleigh "]), [
-    "daniel",
-    "irina",
-    "gordon",
-    "ashleigh"
-  ]
-);
-test(
-  "tidyUpString function works - case 2",
-  tidyUpString([" /Sanyia ", " Michael ", "AnTHonY ", "   Tim   "]),
-  ["sanyia", "michael", "anthony", "tim"]
-);
+test("tidyUpString function works - case 1", tidyUpString(["/Daniel ", "irina ", " Gordon", "ashleigh "]), [
+  "daniel",
+  "irina",
+  "gordon",
+  "ashleigh",
+]);
+test("tidyUpString function works - case 2", tidyUpString([" /Sanyia ", " Michael ", "AnTHonY ", "   Tim   "]), [
+  "sanyia",
+  "michael",
+  "anthony",
+  "tim",
+]);
 
 test("validate function works - case 1", validate(10), true);
 test("validate function works - case 2", validate(18), true);
@@ -94,28 +98,12 @@ test("validate function works - case 3", validate(17), false);
 test("validate function works - case 4", validate("Ten"), false);
 test("validate function works - case 5", validate(108), false);
 
-test(
-  "remove function works - case 1",
-  remove([10, 293, 292, 176, 29], 3), [10, 293, 292, 29]
-);
-test(
-  "remove function works - case 2",
-  remove(["a", "b", "c", "d", "e", "f", "g"], 6), [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f"
-  ]
-);
+test("remove function works - case 1", remove([10, 293, 292, 176, 29], 3), [10, 293, 292, 29]);
+test("remove function works - case 2", remove(["a", "b", "c", "d", "e", "f", "g"], 6), ["a", "b", "c", "d", "e", "f"]);
 
-test(
-  "formatPercentage function works - case 1",
-  formatPercentage([23, 18.103, 187.2, 0.372]), [
-    "23%",
-    "18.1%",
-    "100%",
-    "0.37%"
-  ]
-);
+test("formatPercentage function works - case 1", formatPercentage([23, 18.103, 187.2, 0.372]), [
+  "23%",
+  "18.1%",
+  "100%",
+  "0.37%",
+]);
