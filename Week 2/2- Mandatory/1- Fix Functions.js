@@ -44,11 +44,9 @@ function test(test_name, actual, expected) {
     isEqual = actual === expected;
   }
 
-  if (isEqual) {
-    status = "✅PASSED";
-  } else {
-    status = `❌FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
-  }
+  status = isEqual
+    ? "✅PASSED"
+    : `❌FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
 
   console.log(`${test_name}: ${status}`);
 }
