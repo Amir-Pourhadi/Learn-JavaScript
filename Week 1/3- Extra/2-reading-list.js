@@ -21,8 +21,54 @@ Exercise 2
 =====
 Now use an if/else statement to change the output depending on whether you read it yet or not. 
 
-If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
+If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien',
+and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 
 **/
 
-let books = [];
+const books = [
+  {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    alreadyRead: true,
+  },
+  {
+    title: "The Lord of the Rings",
+    author: "J.R.R. Tolkien",
+    alreadyRead: false,
+  },
+  {
+    title: "Animal Farm",
+    author: "George Orwell",
+    alreadyRead: false,
+  },
+  {
+    title: "Arthashastra",
+    author: "Kautilya",
+    alreadyRead: true,
+  },
+  {
+    title: "Adventures of Tom Sawyer",
+    author: "Mark Twain",
+    alreadyRead: true,
+  },
+  {
+    title: "Ben Hur",
+    author: "Lewis Wallace",
+    alreadyRead: false,
+  },
+  {
+    title: "Mein Kampf",
+    author: "Adolf Hitler",
+    alreadyRead: false,
+  },
+  {
+    title: "Chitra",
+    author: "R.N.Tagore",
+    alreadyRead: true,
+  },
+];
+
+books.forEach(({ title, author, alreadyRead }) =>
+  console.log((alreadyRead ? "You already read" : "You still need to read") + ` ${title} by ${author}`)
+);
