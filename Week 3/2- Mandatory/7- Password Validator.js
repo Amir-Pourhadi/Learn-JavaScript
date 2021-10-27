@@ -23,20 +23,15 @@ PasswordValidationResult=  [false, false, false, false, true]
 */
 
 function validatePasswords(passwords) {
-  return passwords.map((pass, index, array) => {
-    if (
+  return passwords.map(
+    (pass, index, array) =>
       pass.length >= 5 &&
       /[A-Z]/.test(pass) &&
       /[a-z]/.test(pass) &&
       /[0-9]/.test(pass) &&
       /[!#$%.*&]/.test(pass) &&
       array.indexOf(pass) === index
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  });
+  );
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
