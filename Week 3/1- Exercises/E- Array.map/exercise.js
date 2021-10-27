@@ -9,22 +9,17 @@ function multiplyHundred(num) {
 
 var newNums1 = nums.map(multiplyHundred);
 
-var newNums2 = nums.map(function multiplyHundred(num) {
+var newNums2 = nums.map(function (num) {
   return num * 100;
 });
 
-var newNums3 = nums.map(function (num) {
+var newNums3 = nums.map((num) => {
   return num * 100;
 });
 
-var newNums4 = nums.map((num) => {
-  return num * 100;
-});
-
-var newNums5 = nums.map((num) => num * 100);
+var newNums4 = nums.map((num) => num * 100);
 
 console.log(newNums1);
 console.log(newNums2);
 console.log(newNums3);
 console.log(newNums4);
-console.log(newNums5);

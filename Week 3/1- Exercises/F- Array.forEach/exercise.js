@@ -25,20 +25,20 @@ arr.map(formatNums).forEach((num) => console.log(num));
 
 /* EXPECTED OUTPUT */
 
-/*
+/**
 1
 2
 'Fizz'
 4
-'Buzz'
+Buzz
 'Fizz'
 7
 8
 'Fizz'
-'Buzz'
+Buzz
 11
 'Fizz'
 13
 14
 'FizzBuzz'
-*/
+ */

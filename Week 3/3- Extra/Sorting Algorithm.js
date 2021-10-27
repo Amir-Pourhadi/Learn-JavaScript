@@ -46,9 +46,9 @@ function arraysEqual(a, b) {
 function test(test_name, expr) {
   let status;
   if (expr) {
-    status = "PASSED";
+    status = "✅PASSED";
   } else {
-    status = "FAILED";
+    status = "❌FAILED";
   }
 
   console.log(`${test_name}: ${status}`);

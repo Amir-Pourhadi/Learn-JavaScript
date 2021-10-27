@@ -24,15 +24,14 @@ function convertToBRL(price) {
 /* -------------------------- TESTS - DO NOT MODIFY ------------------------- */
 // There are some Tests in this file that will help you work out if your code is working.
 
-
 const util = require("util");
 
 function test(test_name, actual, expected) {
   let status;
   if (actual === expected) {
-    status = "PASSED";
+    status = "✅PASSED";
   } else {
-    status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
+    status = `❌FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
   }
 
   console.log(`${test_name}: ${status}`);

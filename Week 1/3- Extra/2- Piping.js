@@ -50,9 +50,9 @@ const util = require("util");
 function test(test_name, actual, expected) {
   let status;
   if (actual === expected) {
-    status = "PASSED";
+    status = "✅PASSED";
   } else {
-    status = `FAILED: expected: ${util.inspect(expected)} but your code returned: ${util.inspect(actual)}`;
+    status = `❌FAILED: expected: ${util.inspect(expected)} but your code returned: ${util.inspect(actual)}`;
   }
 
   console.log(`${test_name}: ${status}`);

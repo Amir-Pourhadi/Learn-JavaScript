@@ -65,9 +65,9 @@ const assert = require("assert");
 function test(testName, fn) {
   try {
     fn();
-    console.log(`\n✅ ${testName}: PASS`);
+    console.log(`\n${testName}: ✅PASS`);
   } catch (error) {
-    console.log(`\n❌ ${testName}: FAIL (see details below)\n\n${error.message}`);
+    console.log(`\n${testName}: ❌FAIL (see details below)\n\n${error.message}`);
   }
 }
 

@@ -41,7 +41,7 @@ Write a function that:
 */
 
 function formatPercentage(arr) {
-  return arr.map((el) => (el > 100 ? (el = "100%") : Math.round(el * 100) / 100 + "%"));
+  return arr.map((el) => (el > 100 ? "100%" : Math.round(el * 100) / 100 + "%"));
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */
@@ -59,9 +59,9 @@ function test(test_name, actual, expected) {
   }
 
   if (isEqual) {
-    status = "PASSED";
+    status = "✅PASSED";
   } else {
-    status = `FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
+    status = `❌FAILED: expected: ${util.inspect(expected)} but your function returned: ${util.inspect(actual)}`;
   }
 
   console.log(`${test_name}: ${status}`);

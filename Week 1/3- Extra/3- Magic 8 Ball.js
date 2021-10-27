@@ -106,9 +106,9 @@ console.log = function () {
 function test(test_name, expr) {
   let status;
   if (expr) {
-    status = "PASSED";
+    status = "✅PASSED";
   } else {
-    status = "FAILED";
+    status = "❌FAILED";
   }
 
   logged = undefined;
