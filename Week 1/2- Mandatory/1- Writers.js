@@ -8,37 +8,43 @@ Here is the array:
 
 */
 
-let writers = [
+const writers = [
   {
     firstName: "Virginia",
     lastName: "Woolf",
     occupation: "writer",
     age: 59,
-    alive: false
+    alive: false,
   },
   {
     firstName: "Zadie",
     lastName: "Smith",
     occupation: "writer",
     age: 41,
-    alive: true
+    alive: true,
   },
   {
     firstName: "Jane",
     lastName: "Austen",
     occupation: "writer",
     age: 41,
-    alive: false
+    alive: false,
   },
   {
     firstName: "bell",
     lastName: "hooks",
     occupation: "writer",
     age: 64,
-    alive: true
-  }
+    alive: true,
+  },
 ];
 
 /*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
+writers
+  .filter(({ alive }) => alive)
+  .forEach(({ firstName, lastName, age, occupation }) =>
+    console.log(`Hi, my name is ${firstName} ${lastName}. I am ${age} years old, and work as a ${occupation}.`)
+  );
