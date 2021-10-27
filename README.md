@@ -9,6 +9,6 @@
   [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Amir-Pourhadi_CYF-PracticeJS-1&metric=security_rating)](https://sonarcloud.io/dashboard?id=Amir-Pourhadi_CYF-PracticeJS-1)
 </div>
 
-# HTML-CSS Homework
+# JavaScript I Homework
 
 In this repository you can find all of the homework for the [JavaScript I Module](https://codeyourfuture.github.io/syllabus-master/js-core-1/)
