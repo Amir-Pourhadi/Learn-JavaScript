@@ -4,6 +4,8 @@
   Open index.html in your browser
 */
 
+const exercise = document.querySelectorAll("div > p");
+
 /*
   EXERCISE 1
   =======
@@ -14,10 +16,10 @@
   EXPECTED RESULT: The #exercise1 element has textContent = "YOUR NAME" when
   the button is clicked
 */
-document.querySelector('#button1').addEventListener('click', exercise1)
+document.querySelector("#button1").addEventListener("click", exercise1);
 
 function exercise1() {
-  // Write your implementation here
+  exercise[0].textContent = "Amir Pourhadi";
 }
 
 /*
@@ -34,10 +36,10 @@ function exercise1() {
   EXPECTED RESULT: The #exercise2 element has textContent = "Hello from the
   function caller"
 */
-functionThatCallsBack(exercise2)
+functionThatCallsBack(exercise2);
 
 function exercise2(result) {
-  // Write your implementation here
+  exercise[1].textContent = result;
 }
 
 /*
@@ -57,23 +59,21 @@ function exercise2(result) {
 */
 
 function exercise3(callback) {
-  // Write your implementation here
-
-  // Write your explanation here
+  callback("Hello from the callback");
 }
 
-// 
+//
 // -------------------------------------
-// 
+//
 // DON'T EDIT THE FUNCTIONS BELOW!
 // THEY ARE PROVIDED FOR YOU
 //
 // -------------------------------------
 //
 function functionThatCallsBack(callback) {
-  callback('Hello from the function caller')
+  callback("Hello from the function caller");
 }
 
 exercise3((text) => {
-  document.querySelector('#exercise3').innerText = text
-})
+  exercise[2].innerText = text;
+});
