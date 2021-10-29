@@ -27,7 +27,7 @@ Prefer to work on a CodePen? https://codepen.io/makanti/pen/MWwMgmW?editors
 ================
 */
 
-const movies = [
+const sampleMovies = [
   {
     title: "Color Out of Space",
     director: "Richard Stanley",
@@ -78,11 +78,11 @@ const myMovie = {
 
 // create addMovies function
 function addMovie(movie) {
-  movies.push(movie);
+  sampleMovies.push(movie);
 }
 
 setTimeout(() => {
-  showMovies(movies);
+  showMovies(sampleMovies);
 }, 1000);
 
 setTimeout(() => {
