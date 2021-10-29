@@ -1,17 +1,17 @@
 // Refactor this code to make appropriate use of `let` and `const`
 
 function getCircleArea(radius) {
-  var pi = Math.PI;
-  var rSquared = Math.pow(radius, 2);
+  const pi = Math.PI;
+  const rSquared = Math.pow(radius, 2);
 
   return pi * rSquared;
 }
 
 function getCircleAreas(radiusArr) {
-  var areasArr = [];
+  const areasArr = [];
 
-  for (var i = 0; i < radiusArr.length; i++) {
-    var circleArea = getCircleArea(radiusArr[i]);
+  for (const radius of radiusArr) {
+    const circleArea = getCircleArea(radius);
     areasArr.push(circleArea);
   }
 
