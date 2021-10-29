@@ -3,7 +3,7 @@
 html,
 body {
   background-color: grey;
-  font-family: georgia;
+  font-family: georgia, sans-serif;
   font-size: 16px;
   margin: 1rem;
 }
