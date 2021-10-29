@@ -17,3 +17,5 @@ function getCircleAreas(radiusArr) {
 
   return areasArr;
 }
+
+console.log(getCircleAreas([1, 2, 3, 4]));
