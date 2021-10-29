@@ -5,6 +5,8 @@ window.addEventListener("load", function () {
   render();
 });
 
+document.querySelector("#submitBtn").addEventListener("click", submit);
+
 function populateStorage() {
   if (myLibrary.length === 0) {
     const book1 = new Book("Robison Crusoe", "Daniel Defoe", "252", true);
