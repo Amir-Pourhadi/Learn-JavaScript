@@ -14,8 +14,13 @@ const twoVar = (amount, fruit) => {
 };
 
 // This arrow function should return the object literal:
-// {fruit: "apple", colour: "red}
+const fruitObj = { fruit: "apple", colour: "red" };
 
 const objLiteral = ({ fruit, colour }) => {
   return `You have ${colour} ${fruit}`;
 };
+
+console.log(noVar());
+console.log(oneVar("Arrow Function"));
+console.log(twoVar(3, "bananas"));
+console.log(objLiteral(fruitObj));
