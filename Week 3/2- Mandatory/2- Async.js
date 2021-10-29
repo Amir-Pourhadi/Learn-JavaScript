@@ -5,16 +5,20 @@
 //
 // Hint: use the `async` keyword to create an async function
 
-function getFlightDetails() {
-  setTimeout(() => {}, 300)
+async function getFlightDetails() {
+  setTimeout(() => ({}), 300);
 
-  return 'LDN -> JPN'
+  return "LDN -> JPN";
 }
 
 function selectFlight(flight) {
-  return `Flight ${flight} selected`)
+  return `Flight ${flight} selected`;
 }
 
 function bookFlight(flight) {
-  return `Flight ${flight} booked`
+  return `Flight ${flight} booked`;
 }
+
+getFlightDetails()
+  .then((flight) => selectFlight(flight))
+  .then((flight) => bookFlight(flight));
