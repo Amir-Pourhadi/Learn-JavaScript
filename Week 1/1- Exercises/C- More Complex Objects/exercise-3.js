@@ -4,7 +4,7 @@
     Write the code for the functions as per the description above them
 */
 
-let kinningParkHouse = {
+const kinningParkHouse = {
   address: "1 Kinning Park",
   price: 180000,
   currentOwner: {
@@ -14,7 +14,7 @@ let kinningParkHouse = {
   },
 };
 
-let parkAvenueHouse = {
+const parkAvenueHouse = {
   address: "50 Park Avenue",
   price: 195000,
   currentOwner: {

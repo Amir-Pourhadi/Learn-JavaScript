@@ -5,7 +5,7 @@
     and make sure it outputs the correct results
 */
 
-let house = {
+const house = {
   address: "1 Kinning Park",
   previousOwners: ["Claire M.", "John A."],
   currentOwner: {
@@ -14,7 +14,7 @@ let house = {
   },
 };
 
-let newCurrentOwner = {
+const newCurrentOwner = {
   firstName: "Georgina",
   lastName: "Hernandez",
 };

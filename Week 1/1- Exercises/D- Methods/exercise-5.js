@@ -8,7 +8,7 @@ getCoffee takes a coffee type in parameter and dispend the selected coffee
 only if the inserted amount is greater or equal than the price of the coffee!
 */
 
-let coffeeMachine = {
+const coffeeMachine = {
   brand: "Super Coffee",
   prices: {
     cappuccino: 2.4,

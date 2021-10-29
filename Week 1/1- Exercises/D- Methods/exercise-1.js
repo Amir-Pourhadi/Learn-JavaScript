@@ -3,7 +3,7 @@ A person named Alice is defined below.
 Add a method "greet" so this person can say hello.
 */
 
-let person = {
+const person = {
   name: "Alice",
   age: 25,
   greet: function () {

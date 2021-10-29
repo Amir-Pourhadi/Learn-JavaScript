@@ -2,7 +2,7 @@
     Write code in the space provided so that the expected values output
 */
 
-let dog = {
+const dog = {
   name: "Billy",
   wantsToPlay: false,
 };

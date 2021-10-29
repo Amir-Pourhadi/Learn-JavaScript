@@ -4,7 +4,7 @@
   Make sure you run the file after and it outputs the correct results.
 */
 
-let house = {
+const house = {
   address: "1 Kinning Park",
   previousOwners: ["Claire M.", "John A."],
   currentOwner: {

@@ -8,7 +8,7 @@ drinking some of it, and emptying it.
 We made a start on this for you here: 
 */
 
-let bottle = {
+const bottle = {
   volume: 0,
   fill: function () {
     // calling this function should make you bottles volume = 100;

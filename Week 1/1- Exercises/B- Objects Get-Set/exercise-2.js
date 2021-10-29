@@ -4,15 +4,15 @@
     Once you fix them, run this file, it should output the correct values!
 */
 
-let phone = {
+const phone = {
   brand: "iPhone",
   model: "iPhone X",
   launchYear: 2017,
   isUnlocked: true,
 };
 
-let phoneBrand = phone.brand;
-let phoneLaunchYear = phone["launchYear"];
+const phoneBrand = phone.brand;
+const phoneLaunchYear = phone["launchYear"];
 
 // DO NOT MODIFY BELOW THIS LINE
 

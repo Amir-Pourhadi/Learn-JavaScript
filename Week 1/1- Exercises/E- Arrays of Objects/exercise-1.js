@@ -4,17 +4,17 @@
 3) Filter the persons to return an array with the person younger than 28 years old (hint: use filter).
 */
 
-var person1 = {
+const person1 = {
   name: "Alice",
   age: 25,
 };
 
-var person2 = {
+const person2 = {
   name: "Bob",
   age: 30,
 };
 
-var person3 = {
+const person3 = {
   name: "John",
   age: 20,
 };
@@ -24,11 +24,11 @@ DO NOT EDIT ANYTHING ABOVE THIS LINE
 WRITE YOUR CODE BELOW
 */
 
-var persons = [person1, person2, person3]; // Complete here
+const persons = [person1, person2, person3]; // Complete here
 
-var personNames = persons.map((person) => person.name); // Complete here
+const personNames = persons.map((person) => person.name); // Complete here
 
-var personsYoungerThan28YearsOld = persons.filter(({ age }) => age < 28); // Complete here
+const personsYoungerThan28YearsOld = persons.filter(({ age }) => age < 28); // Complete here
 
 /*
 DO NOT EDIT ANYTHING BELOW THIS LINE
