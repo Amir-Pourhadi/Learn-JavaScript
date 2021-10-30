@@ -1,5 +1,3 @@
-// Return the keys of the following object
-
 const capitalCities = {
   scotland: "Edinburgh",
   kenya: "Nairobi",
@@ -11,18 +9,22 @@ const highScores = {
   55: "Alistair",
   100: "David",
   89: "Hannah",
-  34: ["Sergi", "Frank"],
+  34: ["Sergio", "Frank"],
 };
-
-// ONLY EDIT BELOW HERE
 
 const capitalCitiesKeys = Object.keys(capitalCities);
 const highScoresKeys = Object.keys(highScores);
-
-// ONLY EDIT ABOVE HERE
+const capitalCitiesValues = Object.values(capitalCities);
+const highScoresValues = Object.values(highScores);
 
 console.log(capitalCitiesKeys);
-// prints [ 'scotland', 'kenya', 'australia', 'canada' ]
+// [ 'scotland', 'kenya', 'australia', 'canada' ]
 
 console.log(highScoresKeys);
-// prints ['34, '55', '89', '100']
+// ['34, '55', '89', '100']
+
+console.log(capitalCitiesValues);
+// [ 'Edinburgh', 'Nairobi', 'Canberra', 'Ottawa' ]
+
+console.log(highScoresValues);
+// [[ 'Sergio', 'Frank' ], 'Alistair, 'David', 'Hannah']
