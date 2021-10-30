@@ -1,8 +1,7 @@
 /* -------------------------- Destructuring Arrays -------------------------- */
 
 const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
-const highScore = scores[0];
-const secondHighScore = scores[1];
+
 const [gold, silver, bronze, ...others] = scores;
 
 console.log(gold, silver, bronze, others); //=> 10 9 8 [7, 6, 5, 4, 3, 2, 1, 0]
@@ -24,7 +23,7 @@ const fName = sampleUser.firstName;
 const lName = sampleUser.lastName;
 console.log(fName, lName); //=> MJ Zarif
 
-const { email, password, born, died, bio } = sampleUser;
+const { email, password, born, died } = sampleUser;
 console.log(email, password, born, died); //=> zarif@gmail.com asgharTala007 1950 undefined
 
 const { tavileh: role, akhor: country } = sampleUser;
