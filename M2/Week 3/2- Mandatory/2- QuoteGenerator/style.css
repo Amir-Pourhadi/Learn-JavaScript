@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  background-color: #f3a83b;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.quote-container {
+  background-color: #fff;
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 38px, rgba(0, 0, 0, 0.22) 0 15px 12px;
+}
+
+.quote-img {
+  height: 15%;
+  margin: 15% 5%;
+  float: left;
+}
+
+#text {
+  color: #f3a83b;
+  margin: 15% 5%;
+  font: bold 2.3em "Courgette", cursive;
+  text-align: center;
+  line-height: 50px;
+  height: 20%;
+}
+
+#author {
+  text-align: end;
+  margin: 0 5%;
+  font: bold 2em "Bad Script", cursive;
+}
+
+#newBtn {
+  background-color: #f3a83b;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 27%;
+  left: 24%;
+  font-size: x-large;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.loading {
+  position: absolute;
+  top: 30%;
+  right: 40%;
+}
