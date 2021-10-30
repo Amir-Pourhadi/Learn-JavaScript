@@ -6,6 +6,7 @@
 
 // also try this one in browser console
 const arr = [1, 2, 3];
+console.dir(arr);
 
 //let's we make a method to this arr:
 
@@ -21,16 +22,13 @@ arr.push(4);
 //now do this:
 
 const body = document.body;
-
 console.dir(body);
 
 // now find prototype
 
 // now this one:
-
-Array.prototype;
-
-String.prototype;
+// Array.prototype
+// String.prototype
 
 //let's make a prototype :)
 //don't try it at home :D, it's not what I want you to do as a regular pattern,
