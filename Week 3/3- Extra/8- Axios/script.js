@@ -42,7 +42,7 @@ const getDadJoke = async () => {
     const res = await axios.get("https://icanhazdadjoke.com/", config);
     return res.data.joke;
   } catch (e) {
-    throw "NO JOKES AVAILABLE! SORRY :(";
+    throw new Error("NO JOKES AVAILABLE! SORRY :(");
   }
 };
 
